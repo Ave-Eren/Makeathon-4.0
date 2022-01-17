@@ -74,10 +74,11 @@ html, body {
     width: 69.420%;
     opacity: 1;
     transition-property: "height";
-    transition-duration: 1s;
+    transition-duration: 10s !important;
 }
 
 .base-contain:hover{
+    background:#00000066;
     height: 55vh;
 }
 
