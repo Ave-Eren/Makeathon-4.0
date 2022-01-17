@@ -64,10 +64,11 @@ html, body {
     color: aliceblue;
     font-family: 'Montserrat', sans-serif;
     font-size: 85%;
+    display: hidden;
 }
 
 .base-contain{
-    background: linear-gradient(#8A8A8A66,#00000066);
+    background: linear-gradient(#00000066,#8A8A8A66);
     border-radius: 3%;
     padding: 3vh;
     height: 42vh;
@@ -75,13 +76,16 @@ html, body {
     opacity: 1;
     transition-property: "height";
     transition-duration: 1s;
+    cursor: pointer;
 }
 
-.base-contain:hover{
+.base-contain:hover, .base-contain:focus{
+    background: linear-gradient(#8A8A8A66,#00000066);
     height: 55vh;
 }
 
 .social-icons{
+    display: none;
     width: 12.5%;
     height: auto;
     object-fit: cover;
@@ -89,14 +93,14 @@ html, body {
 
 /* For hidden text and icons*/
 
-#hidden{
-    display: none;
-}
-
-.base-contain:hover #hidden{
+.dropdown {
+    position: relative;
     display: inline-block;
-}
+  }
 
+.show {
+      display:block;
+}
 /* Media Queries */
 
 @media screen and (max-width :1366px){
